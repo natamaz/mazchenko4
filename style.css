@@ -9,24 +9,20 @@
     src: url("font/HelveticaNeueCyr-Bold.otf");
 
 }
-
 .page
 {
     background-color:#f9f9f8 ;
-    width:1215px;
-    height:1064px;
-    margin: 0 auto;
 }
 header
 {
     height: 38px;
     background: #074b87;
     padding-right: 20px;
-
 }
 .nav
 {
     float: right;
+    border-right: 2px solid #56a2dc;
 }
 .nav li
 {
@@ -56,14 +52,11 @@ header
     color: white;
     background-color: #4eabda;
 }
-.rightborder
-{
-    padding-right: 10px;
-    border-right: 2px solid #56a2dc;
-}
+
 .righte_nav
 {
     float: right;
+    padding-left: 19px;
 }
 .righte_nav li
 {
@@ -98,16 +91,17 @@ header
 }
 .kontent
 {
-    background-image: url("images/fon.png");
-    width:1215px;
+    background: url("images/fon.png") ;
     height:1028px;
     margin: 0;
     position: relative;
+    background-size: 100%;
+
 }
 .group
 {
     width:560px;
-    height:615px;
+    height:620px;
     border-radius: 4px;
     background: rgba(0,0,0,0.5);
     color: black;
@@ -141,14 +135,16 @@ header
     text-align: center;
     margin-top: 31px;
     padding: 0 140px;
+
 }
 .left
 {
     width: 125px;
     height: 2px;
     bottom: 4px;
-    border-top: 1px solid #666666;
-    border-bottom: 1px solid #000000;
+    border-top: 1px;
+    border-bottom: 1px ;
+    background: linear-gradient(to top, #000000 50%, #666666 50%);
     float: left;
     margin-top: 7px;
 
@@ -158,8 +154,7 @@ header
     width: 125px;
     height: 2px;
     bottom: 4px;
-    border-top: 1px solid #666666;
-    border-bottom: 1px solid #000000;
+    background: linear-gradient(to top, #000000 50%, #666666 50%);
     float: right;
     margin-top: 7px;
 }
@@ -178,13 +173,15 @@ header
     border: none;
     border-bottom: 2px solid #494947;
     padding-left: 15px;
+
 }
 .fields:hover
 {
     color: white;
     background-color: #1b5288;
-    border:2px solid #689bcc ;
 }
+.fields:before{border:2px solid #689bcc ;}
+
 .send_me
 {
     color: white;
